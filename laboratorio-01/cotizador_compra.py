@@ -1,3 +1,11 @@
+# Cotizador de compra - Laboratorio 01, Práctica 1.5
+# Orden de cálculo:
+# 1. subtotal = precio * cantidad
+# 2. valor_descuento = subtotal * (descuento / 100)
+# 3. base = subtotal - valor_descuento
+# 4. valor_impuesto = base * (impuesto / 100)  (el impuesto se aplica sobre la base)
+# 5. total = base + valor_impuesto
+
 nombre_cliente = input("Nombre del cliente: ")
 producto = input("Producto: ")
 precio_unitario = float(input("Precio unitario: "))
@@ -26,10 +34,10 @@ print("      RESUMEN DE COMPRA")
 print("-----------------------------")
 print("Cliente:", nombre_cliente)
 print("Producto:", producto)
-print("Precio unitario: $", precio_unitario)
+print(f"Precio unitario: ${precio_unitario}")
 print("Cantidad:", cantidad)
-print("Subtotal: $", subtotal)
-print("Descuento: $", valor_descuento)
-print("Base: $", base)
-print("Impuesto: $", valor_impuesto)
-print("TOTAL: $", total)
+print(f"Subtotal: ${subtotal}")
+print(f"Descuento: ${valor_descuento}")
+print(f"Base: ${base}")
+print(f"Impuesto: ${valor_impuesto}")
+print(f"TOTAL: ${total}")
