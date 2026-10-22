@@ -1,6 +1,6 @@
 print("Hola, me llamo Anthony")
 print("Tengo 17 años")
-print("Estoy estudianto programación")
+print("Estoy estudiando programación")
 print("Y me gusta Iron Man")
 
 '''¿Qué extensión tienen los archivos de Python?'''
