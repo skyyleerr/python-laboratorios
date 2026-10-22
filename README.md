@@ -32,12 +32,6 @@ cd laboratorio-04/gestor_inventario && python -m unittest -v      # pruebas del 
 Repositorio personal de **Anthony Córdova Calderón** (ficha 3388087). Cada laboratorio vive en su carpeta
 y se conserva completo para mostrar la evolución técnica.
 
-| Laboratorio | Carpeta | Tema | Proyecto integrador |
-|---|---|---|---|
-| 01 | [`laboratorio-01/`](laboratorio-01/) | Fundamentos: variables, entrada/salida y cálculos | Cotizador |
-| 02 | [`laboratorio-02/`](laboratorio-02/) | Decisiones, ciclos y colecciones | Gestor de inventario procedural (listas y diccionarios) |
-| 03 | [`laboratorio-03/`](laboratorio-03/) | Funciones, módulos y POO | Gestor de inventario orientado a objetos (`Producto` + `Inventario`) |
-
 
 =======
 Repositorio personal de **Anthony Córdova Calderón** (ficha 3388087, ADSO) para los cuatro laboratorios de Python.
