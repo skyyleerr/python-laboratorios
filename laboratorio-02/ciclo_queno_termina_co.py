@@ -12,4 +12,5 @@ while numero <= 5:
 
 # ¿Por qué funciona ahora?
 # La instrucción:
-# numero += 1
+# numero += 1# ...incrementa la variable que controla el ciclo en cada vuelta. Así numero llega a 6,
+# la condición numero <= 5 deja de cumplirse y el ciclo termina.
