@@ -12,23 +12,6 @@ y se conserva completo para mostrar la evolución técnica.
 =======
 Repositorio personal de **Anthony Córdova Calderón** (ficha 3388087, ADSO) para los cuatro laboratorios de Python.
 
-| Laboratorio | Tema | Carpeta |
-|---|---|---|
-| 01 | Primeros pasos: variables, tipos, operadores, `input()` y cotizador | [`laboratorio-01/`](laboratorio-01/) |
-| 02 | Decisiones, ciclos y colecciones; gestor de inventario | [`laboratorio-02/`](laboratorio-02/) |
-| 03 | _pendiente_ | — |
-| 04 | _pendiente_ | — |
->>>>>>> d103dd188e8eefb79a90cb60e7d50d5ec48b5169
-
-## Cómo ejecutar
-
-```bash
-<<<<<<< HEAD
-cd laboratorio-02 && python gestor_inventario.py                 # versión procedural
-cd laboratorio-03/gestor_inventario && python main.py            # versión orientada a objetos
-cd laboratorio-03/gestor_inventario && python -m unittest -v     # pruebas
-```
-
 ## Evolución del gestor de inventario
 
 - **Lab 2:** un archivo, productos como diccionarios dentro de una lista, todo el código en un ciclo `while`.
