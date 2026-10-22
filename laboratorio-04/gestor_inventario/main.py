@@ -55,13 +55,13 @@ def mostrar_menu():
     for linea in ("1. Registrar producto", "2. Listar productos", "3. Buscar por código",
                   "4. Actualizar existencias", "5. Eliminar producto",
                   "6. Consultar productos sin stock", "7. Resumen del inventario",
-                  "8. Guardar inventario", "9. Exportar reporte CSV", "10. Salir (también 0)"):
+                  "8. Guardar inventario", "9. Exportar reporte CSV", "0. Salir"):
         print(linea)
 
 
 def mostrar_producto(p):
-    print(f"{p.codigo} | {p.nombre} | {p.categoria} | ${p.precio:,.2f} | "
-          f"{p.cantidad} unidades | valor ${p.calcular_valor():,.2f}")
+    print(f"{p.codigo} - {p.nombre} - {p.categoria} - ${p.precio} - "
+          f"{p.cantidad} unidades - valor ${p.calcular_valor()}")
 
 
 def ejecutar(inventario=None, solo_lectura=False):
@@ -114,16 +114,17 @@ def ejecutar(inventario=None, solo_lectura=False):
                 for producto in agotados: mostrar_producto(producto)
             elif opcion == "7":
                 r = inventario.resumen()
-                print("Productos:", r["productos_registrados"])
-                print("Unidades:", r["unidades_disponibles"])
-                print("Valor del inventario:", f"${r['valor_total']:,.2f}")
-                print("Categorías:", len(r["categorias"]), sorted(r["categorias"]))
+                print("Productos registrados:", r["productos_registrados"])
+                print("Unidades disponibles:", r["unidades_disponibles"])
+                print("Valor del inventario: $" + str(float(r["valor_total"])))
+                categorias = sorted(r["categorias"])
+                print("Categorías utilizadas:", len(categorias), categorias)
             elif opcion == "8":
                 if solo_lectura: print("Guardado bloqueado para proteger el archivo inválido."); continue
                 print("Guardado en:", guardar_inventario(inventario))
             elif opcion == "9":
                 print("Reporte exportado:", exportar_csv(inventario))
-            elif opcion in {"0", "10"}:
+            elif opcion == "0":
                 if not solo_lectura:
                     try: print("Estado final guardado en:", guardar_inventario(inventario))
                     except OSError as error: print("No se pudo guardar al salir:", error)
