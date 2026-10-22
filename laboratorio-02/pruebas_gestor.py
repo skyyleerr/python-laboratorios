@@ -32,7 +32,8 @@ P3 = registrar("P003", "Disco SSD", "Componentes", 700000, 2)
 PRUEBAS = [
     ("Listar sin productos", ["2"], ["No hay productos registrados."], []),
     ("Registrar P001", P1, ["Producto registrado."], []),
-    ("Registrar P001 nuevamente", P1 + P1, ["ya existe un producto con ese código"], []),
+    # el programa detecta el duplicado tras pedir código, nombre y categoría, antes de pedir precio y cantidad
+    ("Registrar P001 nuevamente", P1 + ["1", "P001", "Teclado", "Periféricos"], ["ya existe un producto con ese código"], []),
     ("Nombre vacío", ["1", "P001", "", "Periféricos"], ["no pueden estar vacíos"], ["Producto registrado."]),
     ("Nombre solo espacios", ["1", "P001", "   ", "Periféricos"], ["no pueden estar vacíos"], ["Producto registrado."]),
     ("Categoría fuera de la tupla", ["1", "P001", "Teclado", "Ropa"], ["categoría no válida"], ["Producto registrado."]),
