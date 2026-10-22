@@ -1,6 +1,6 @@
 # Python — Laboratorios
 
-Repositorio personal para los cuatro laboratorios de Python (ADSO).
+Repositorio personal de **Anthony Córdova Calderón** (ficha 3388087, ADSO) para los cuatro laboratorios de Python.
 
 | Laboratorio | Tema | Carpeta |
 |---|---|---|
