@@ -86,11 +86,9 @@ while opcion != "0":
 
             for producto in productos:
                 print(
-                    producto["codigo"], "-",
-                    producto["nombre"], "-",
-                    producto["categoria"], "- $",
-                    producto["precio"], "-",
-                    producto["cantidad"], "unidades"
+                    f'{producto["codigo"]} - {producto["nombre"]} - '
+                    f'{producto["categoria"]} - ${producto["precio"]} - '
+                    f'{producto["cantidad"]} unidades'
                 )
 
     # 3. Buscar por código
@@ -108,7 +106,7 @@ while opcion != "0":
             print("Código:", encontrado["codigo"])
             print("Nombre:", encontrado["nombre"])
             print("Categoría:", encontrado["categoria"])
-            print("Precio: $", encontrado["precio"])
+            print(f"Precio: ${encontrado['precio']}")
             print("Cantidad:", encontrado["cantidad"])
         else:
             print("El producto no existe.")
@@ -192,8 +190,8 @@ while opcion != "0":
         print("\nRESUMEN DEL INVENTARIO")
         print("Productos:", cantidad_productos)
         print("Unidades:", unidades_totales)
-        print("Valor total del inventario: $", valor_total)
-        print("Categorías utilizadas:", categorias_utilizadas)
+        print(f"Valor del inventario: ${valor_total}")
+        print("Categorías utilizadas:", ", ".join(sorted(categorias_utilizadas)))
 
     # Salir
     elif opcion == "0":
