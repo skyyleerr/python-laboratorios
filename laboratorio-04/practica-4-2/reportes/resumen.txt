@@ -1,0 +1,3 @@
+Reporte de inventario
+Productos: 0
+Valor total: $0
