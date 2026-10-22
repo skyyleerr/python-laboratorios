@@ -1,3 +1,7 @@
 __pycache__/
 *.pyc
+<<<<<<< HEAD
+=======
+.venv/
+>>>>>>> d103dd188e8eefb79a90cb60e7d50d5ec48b5169
 .vscode/

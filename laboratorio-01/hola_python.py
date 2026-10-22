@@ -1,0 +1,8 @@
+print("=========================")
+print("     PRIMER PROGRAMA")
+print("=========================")
+print("Nombre: Anthony")
+print("Programa: ADSO")
+print("Trimestre: 6")
+print(" ")
+print("Entorno Python listo")
