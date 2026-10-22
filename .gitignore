@@ -1,5 +1,13 @@
 __pycache__/
 *.pyc
+<<<<<<< HEAD
 .vscode/
 laboratorio-04/gestor_inventario/datos/
 laboratorio-04/gestor_inventario/reportes/
+=======
+<<<<<<< HEAD
+=======
+.venv/
+>>>>>>> d103dd188e8eefb79a90cb60e7d50d5ec48b5169
+.vscode/
+>>>>>>> 2e658ae0fb0de86e68c65c65de6e9bcb3e1d8fa6
