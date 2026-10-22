@@ -1,0 +1,4 @@
+Error original: print(self.nombree)
+
+Causa: el constructor almacenó el atributo como self.nombre; nombree no existe y produce AttributeError.
+Corrección: print(self.nombre), implementada en persona_corregida.py.
